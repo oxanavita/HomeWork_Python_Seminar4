@@ -5,12 +5,12 @@
 from random import randint
 
 number1 = int(input("Введите количество элементов первого множества n: "))
-plenty1 = [randint(0, 10) for _ in range(number1)]
+plenty1 = [randint(0, 20) for _ in range(number1)]
 print(f"Первое множество: {plenty1}")
 
 
 number2 = int(input("Введите количество элементов второго множества m: "))
-plenty2 = [randint(0, 10) for _ in range(number2)]
+plenty2 = [randint(0, 20) for _ in range(number2)]
 print(f"Второе множество: {plenty2}")
 
 set1 = set(plenty1)

@@ -7,3 +7,16 @@
 
 
 
+num_bushes = int(input("Введите количество кустов черники на грядке: "))
+
+bushes = []
+for i in range(num_bushes):
+    berries = int(input(f"Введите количество ягод на {i+1}-ом кусте: "))
+    bushes.append(berries)
+
+max_collected = 0
+for i in range(num_bushes):
+    collected = bushes[i] + bushes[i-1] + bushes[(i+1) % num_bushes]
+    max_collected = max(max_collected, collected)
+
+print("Максимальное количество ягод, которое может собрать собирающий модуль:", max_collected)
